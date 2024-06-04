@@ -41,6 +41,7 @@ public class Main {
                         .sorted(Comparator.reverseOrder())
                         .limit(5)
                         .collect(Collectors.toList()))
+                .filter(l -> l.size() == 5)
                 .orElseGet(Collections::emptyList);
     }
 
